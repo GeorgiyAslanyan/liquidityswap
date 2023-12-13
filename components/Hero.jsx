@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-
+//[url('/background.jpg')]
 const Hero = () => {
   return (
     <div className="bg-black bg-cover min-h-screen min-w-screen pb-[70px] rounded-3xl border border-[#EAC57E] m-10 relative ">
@@ -57,7 +57,7 @@ const Hero = () => {
             href="http://"
             target="_blank"
             rel="noopener noreferrer">
-            <button className="text-[32px] bg-gradient-to-br from-[#EAC57E] to-[#ffbe44] rounded-full hover:from-[#ffbe44] hover:to-[#e09304] duration-300 ease-in-out transition-all text-black py-4 px-10 h-full">
+            <button className="text-[32px] rounded-full duration-300 ease-in-out transition-all text-black py-4 px-10 h-full">
               Apply now
             </button>
           </motion.a>

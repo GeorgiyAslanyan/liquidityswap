@@ -26,8 +26,8 @@ const Navbar = () => {
       initial={{ opacity: 0, y: -50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ delay: 0, duration: 0.4 }}
-      className={`fixed z-[100] rounded-full border  justify-center transition-all ease-in-out duration-300 items-center flex py-5 px-6 ${scrollY > 50 ? 'mt-5 bg-black/70 hover:bg-black border-[#eac47e84]' : 'mt-16 bg-black border-[#EAC57E]'} right-14`}>
-      <div className="">
+      className={`fixed z-[100] right-14`}>
+      <div className={`rounded-full border  justify-center transition-all ease-in-out duration-300 items-center flex bg-black border-[#EAC57E] py-5 px-6 ${scrollY > 50 ? 'mt-5 opacity-80 hover:opacity-100' : 'mt-16 opacity-100 '} `}>
         <div className="flex justify-between items-center w-full gap-5">
           <motion.p
             initial={{ opacity: 0, y: -20 }}
@@ -73,7 +73,7 @@ const Navbar = () => {
               href="http://"
               target="_blank"
               rel="noopener noreferrer">
-              <button className="bg-gradient-to-br from-[#EAC57E] to-[#ffbe44] rounded-xl hover:from-[#ffbe44] hover:to-[#e09304] duration-150 ease-linear transition-all text-black px-6 h-full">
+              <button className="rounded-xl  duration-150 ease-linear transition-all text-black px-6 h-full">
                 Docs
               </button>
             </motion.a>

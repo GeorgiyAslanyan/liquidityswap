@@ -29,7 +29,7 @@ const Description = () => {
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0, duration: 0.4 }}>
-            <span className="text-[#EAC57E] pb-4">Immediate Access:</span> <br /> Our
+            <span className="text-[#EAC57E] mb-6 bg-[#0c0c0c] px-3 py-2 rounded-full text-[14px]">Immediate Access</span> <br /> <br /> Our
             service offers a unique solution that allows project creators to
             access their locked ETH without waiting for lengthy lock-in periods
             to expire. This ensures that innovation never has to take a back
@@ -40,9 +40,10 @@ const Description = () => {
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0, duration: 0.4 }}>
-            <span className="text-[#EAC57E] pb-4">
-              Maximize Your Ethereum&apos;s Potential:
+            <span className="text-[#EAC57E] mb-6  bg-[#0c0c0c] px-3 py-2 rounded-full text-[14px]">
+              Maximize Your Ethereum&apos;s Potential
             </span>
+            <br />
             <br />
             With our service, your Ethereum isn&apos;t just sitting idle.
             It&apos;s an active asset, primed to fund your next venture or idea.
@@ -52,9 +53,10 @@ const Description = () => {
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0, duration: 0.4 }}>
-            <span className="text-[#EAC57E] pb-4">
-              Global Operation, Personalized Experience:
+            <span className="text-[#EAC57E] mb-6 bg-[#0c0c0c] px-3 py-2 rounded-full text-[14px]">
+              Global Operation, Personalized Experience
             </span>
+            <br />
             <br />
             Our service is designed for global accessibility, ensuring that no
             matter where you are, you can unlock your liquidity. Plus, we ensure
