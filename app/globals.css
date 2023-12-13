@@ -16,7 +16,19 @@
   }
 }
 
+@font-face {
+  font-family: "__Cumberland Std_5";
+  src: url("/fonts/cumberland%20std.eot");
+  src: local("☺"), url("/fonts/cumberland%20std.woff") format("woff"),
+    url("/fonts/cumberland%20std.svg") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+
 body {
+  font-family: "__Cumberland Std_5";
+  font-weight: 500;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
