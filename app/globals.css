@@ -30,12 +30,6 @@ body {
   font-family: "__Cumberland Std_5";
   font-weight: 500;
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
 
 button {

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className=" overflow-hidden bg-[#161616]">
+    <main className=" overflow-hidden ">
       <Hero />
       <Description />
     </main>

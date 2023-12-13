@@ -82,10 +82,12 @@ const Description = () => {
           </a>
         </motion.div>
         <motion.p
+        className="rounded-3xl bg-black p-5"
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0, duration: 0.4 }}>
-          <span className="text-[#EAC57E]">Safety First:</span>
+          <span className="text-[#EAC57E] mb-6 bg-[#0c0c0c] px-3 py-2 rounded-full text-[14px]">Safety First</span>
+          <br />
           <br />
           In collaboration with Kleros, we guarantee the utmost security for
           every transaction. Kleros a renowned decentralized arbitration
