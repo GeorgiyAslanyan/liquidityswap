@@ -1,15 +1,24 @@
-'use client'
+"use client";
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="bg-[url('/background.jpg')] bg-cover min-h-screen min-w-screen pb-[70px] border-b-2 border-b-[#EAC57E]">
+    <div className="bg-black bg-cover min-h-screen min-w-screen pb-[70px] rounded-3xl border border-[#EAC57E] m-10 relative ">
       <div className="flex flex-col justify-center items-center">
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4, duration: 0.4 }}
+          className="flex gap-5 items-end absolute left-10 top-10">
+          <Image src={"/logo.svg"} alt="logo" width={41} height={40} />
+          <p className="">ØxLiquidity</p>
+        </motion.div>
         <motion.video
-        initial={{ opacity: 0, scale: 0.5 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ delay: 0.4, duration: 0.4 }}
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.4, duration: 0.4 }}
           width="100%"
           height="100%"
           className="pointer-events-none"
@@ -48,7 +57,7 @@ const Hero = () => {
             href="http://"
             target="_blank"
             rel="noopener noreferrer">
-            <button className="border text-[32px] bg-transparent border-[#EAC57E] text-[#EAC57E] hover:bg-[#EAC57E] duration-150 ease-linear transition-all hover:text-black py-3 px-10">
+            <button className="text-[32px] bg-gradient-to-br from-[#EAC57E] to-[#ffbe44] rounded-full hover:from-[#ffbe44] hover:to-[#e09304] duration-300 ease-in-out transition-all text-black py-4 px-10 h-full">
               Apply now
             </button>
           </motion.a>

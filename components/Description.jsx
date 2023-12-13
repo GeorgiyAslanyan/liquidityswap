@@ -7,10 +7,9 @@ const Description = () => {
   const text = "Why Choose Our Service?".split(" ");
 
   return (
-    <div className="bg-[#161616] min-h-screen flex items-center justify-center min-w-screen py-[70px] border-b-2 border-b-[#EAC57E]">
-      <div className="max-w-[1200px] px-10 flex flex-col gap-[51px]">
-        <motion.h1
-          className="w-full text-center ">
+    <div className="min-h-screen flex items-center justify-center min-w-screen pb-[70px]">
+      <div className="mx-10 flex flex-col gap-[51px]">
+        <motion.h1 className="w-full text-center ">
           {text.map((el, i) => (
             <motion.span
               initial={{ opacity: 0 }}
@@ -24,40 +23,46 @@ const Description = () => {
             </motion.span>
           ))}
         </motion.h1>
-        <motion.p
-          initial={{ opacity: 0, y: 100 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0, duration: 0.4 }}>
-          <span className="text-[#EAC57E]">Immediate Access:</span> <br /> Our
-          service offers a unique solution that allows project creators to
-          access their locked ETH without waiting for lengthy lock-in periods to
-          expire. This ensures that innovation never has to take a back seat due
-          to locked funds.
-        </motion.p>
-        <motion.p
-          initial={{ opacity: 0, y: 100 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0, duration: 0.4 }}>
-          <span className="text-[#EAC57E]">
-            Maximize Your Ethereum&apos;s Potential:
-          </span>
-          <br />
-          With our service, your Ethereum isn&apos;t just sitting idle.
-          It&apos;s an active asset, primed to fund your next venture or idea.
-        </motion.p>
-        <motion.p
-          initial={{ opacity: 0, y: 100 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0, duration: 0.4 }}>
-          <span className="text-[#EAC57E]">
-            Global Operation, Personalized Experience:
-          </span>
-          <br />
-          Our service is designed for global accessibility, ensuring that no
-          matter where you are, you can unlock your liquidity. Plus, we ensure a
-          personalized and confidential experience, understanding the unique
-          needs and privacy concerns of each client.
-        </motion.p>
+        <div className="grid grid-cols-3 gap-10">
+          <motion.p
+          className="rounded-3xl bg-black p-5"
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0, duration: 0.4 }}>
+            <span className="text-[#EAC57E] pb-4">Immediate Access:</span> <br /> Our
+            service offers a unique solution that allows project creators to
+            access their locked ETH without waiting for lengthy lock-in periods
+            to expire. This ensures that innovation never has to take a back
+            seat due to locked funds.
+          </motion.p>
+          <motion.p
+          className="rounded-3xl bg-black p-5"
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0, duration: 0.4 }}>
+            <span className="text-[#EAC57E] pb-4">
+              Maximize Your Ethereum&apos;s Potential:
+            </span>
+            <br />
+            With our service, your Ethereum isn&apos;t just sitting idle.
+            It&apos;s an active asset, primed to fund your next venture or idea.
+          </motion.p>
+          <motion.p
+          className="rounded-3xl bg-black p-5"
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0, duration: 0.4 }}>
+            <span className="text-[#EAC57E] pb-4">
+              Global Operation, Personalized Experience:
+            </span>
+            <br />
+            Our service is designed for global accessibility, ensuring that no
+            matter where you are, you can unlock your liquidity. Plus, we ensure
+            a personalized and confidential experience, understanding the unique
+            needs and privacy concerns of each client.
+          </motion.p>
+        </div>
+
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
