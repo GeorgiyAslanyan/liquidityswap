@@ -25,7 +25,8 @@ const Hero = () => {
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.4 }}
-          className="flex gap-5 items-end absolute left-10 top-10">
+          viewport={{ once: true }}
+          className="flex gap-5 items-center absolute left-6 top-6">
           <Image src={"/logo.svg"} alt="logo" width={41} height={40} />
           <p className="">ØxLiquidity</p>
         </motion.div>
@@ -33,6 +34,7 @@ const Hero = () => {
           initial={{ opacity: 0, scale: 0.5 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.4, duration: 0.4 }}
+          viewport={{ once: true }}
           width="100%"
           height="100%"
           className="pointer-events-none"
@@ -85,9 +87,7 @@ const Hero = () => {
                 key={index}>
                 <Image src={"/logo.svg"} alt="logo" width={40} height={40} />
                 <div className="flex flex-col gap-1">
-                    <p className="uppercase text-sm text-gray-400">
-                      {el.title}
-                    </p>
+                  <p className="uppercase text-sm text-gray-400">{el.title}</p>
                   <p className="text-base">{el.descr}</p>
                 </div>
               </motion.div>
