@@ -31,14 +31,3 @@ body {
   font-weight: 500;
   color: rgb(var(--foreground-rgb));
 }
-
-button {
-  background: linear-gradient(138deg, rgba(234,197,126,1) 0%, rgba(255,166,0,1) 50%,  rgba(234,197,126,1) 100%);
-  transition: all ease-in-out .3s;
-  background-size: 200%;
-  background-position: left;
-}
-
-button:hover {
-  background-position: right;
-}

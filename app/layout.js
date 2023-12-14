@@ -1,4 +1,5 @@
 
+import Cookies from "@/components/Cookies";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 
@@ -10,9 +11,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={'text-2xl text-white bg-[#161616]'}>
+      <body className={'text-2xl text-white bg-[#1F2123]'}>
         <Navbar />
         {children}
+        <Cookies />
       </body>
     </html>
   );
