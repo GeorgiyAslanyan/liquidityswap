@@ -85,7 +85,7 @@ const Hero = () => {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: (index + 1) * 0.5, duration: 0.7 }}
-                className="flex gap-3 p-3 items-center rounded-xl bg-[#1F2123]"
+                className="flex gap-3 p-3 items-start rounded-xl bg-[#1F2123]"
                 key={index}>
                 {/* <Image src={"/logo.svg"} alt="logo" width={40} height={40} /> */}
                 <div className="flex flex-col gap-1">
