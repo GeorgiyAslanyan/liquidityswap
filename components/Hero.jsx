@@ -2,19 +2,20 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Lines from "./Lines";
+import InfinitySign from "./InfinitySign";
 //[url('/background.jpg')]
 
 const arr = [
   {
-    title: "UNCX Network (ERC-20)",
-    descr: "6 688 locking operations in 90 days",
+    title: "In progress",
+    descr: "Decentralized Liquidity Listing and Auction Platform",
   },
   {
-    title: "Team Finance (ERC-20)",
-    descr: "805 locking operations in 90 days",
+    title: "In progress",
+    descr: "Decentralized Venture Capital for Emerging Projects",
   },
-  { title: "PinkSale (ERC-20)", descr: "3 022 locking operations in 90 days" },
-  { descr: "Realized profit on our services 74%" },
+  { title: "In progress", descr: "Advanced Liquidity Locker Solutions" },
 ];
 
 const Hero = () => {
@@ -72,12 +73,13 @@ const Hero = () => {
             className="bg-[#161616] border-0 h-[1px]"
           />
           <motion.p
+          className="text-center"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0, duration: 0.7 }}>
-            Latest Ecosystem News
+            Pioneering Liquidity Solutions in Decentralized Finance
           </motion.p>
-          <div className="grid grid-cols-4 gap-4">
+          <div className="grid grid-cols-3 gap-4">
             {arr.map((el, index) => (
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
@@ -85,14 +87,49 @@ const Hero = () => {
                 transition={{ delay: (index + 1) * 0.5, duration: 0.7 }}
                 className="flex gap-3 p-3 items-center rounded-xl bg-[#1F2123]"
                 key={index}>
-                <Image src={"/logo.svg"} alt="logo" width={40} height={40} />
+                {/* <Image src={"/logo.svg"} alt="logo" width={40} height={40} /> */}
                 <div className="flex flex-col gap-1">
-                  <p className="uppercase text-sm text-gray-400">{el.title}</p>
-                  <p className="text-base">{el.descr}</p>
+                  <p className="uppercase text-base text-gray-400">{el.title}</p>
+                  <p className="">{el.descr}</p>
                 </div>
               </motion.div>
             ))}
           </div>
+          <p className="text-justify">
+            Launched in September 2023, 0xLiquidity emerged as a new protocol in
+            the DeFi space, revolutionizing how liquidity is managed and
+            utilized. At its core, 0xLiquidity provides a unique service that
+            enables holders to sell their liquidity, significantly reducing the
+            waiting period typically associated with locked funds in DeFi
+            projects. This allows devs to create more, invest more, and leverage
+            their abilities to profit more. 
+          </p>
+          <div className="relative">
+            <div>
+              <Lines />
+            </div>
+            <div className="absolute flex justify-center items-center top-0 left-0 w-full h-full z-1">
+              <div className="w-[100px] ">
+                <InfinitySign />
+              </div>
+            </div>
+            <div className="absolute flex justify-center items-center top-0 left-0 w-full h-full z-1">
+              <div className=" ">
+                <Image
+                  width={600}
+                  height={300}
+                  className="w-full opacity-30"
+                  alt="fade"
+                  src={"/fade.svg"}
+                />
+              </div>
+            </div>
+          </div>
+              <p className="text-justify">Over time, the protocol has not only
+            established its effectiveness in meeting market demands, but has
+            also robustly validated the security of its solutions. This success
+            marks a pivotal moment for us, as we gear up to enter the main phase
+            of our implementation strategy.</p>
         </div>
       </div>
     </div>
