@@ -11,16 +11,16 @@ const Description = () => {
         <motion.h1 className="w-full pt-10 lg:pt-0 text-center ">
           Why Us?
         </motion.h1>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-10 text-base lg:text-xl">
           <motion.div
             className="rounded-3xl flex flex-col bg-[#3c3c3c] p-5 gap-5"
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0, duration: 0.4 }}>
-            <p className="text-[#EAC57E] bg-[#1F2123] px-4 py-2 rounded-xl 2xl:rounded-full text-base lg:text-[18px]  w-fit">
+            <p className="text-[#EAC57E] bg-[#1F2123] px-4 py-2 rounded-xl 2xl:rounded-full w-fit">
               Immediate Access
             </p>{" "}
-            <p className="text-sm lg:text-base">
+            <p className="">
               Our platform offers a unique solution that allows project creators
               to access their locked ETH without waiting for lengthy lock-in
               periods to expire. This ensures that innovation never has to take
@@ -32,10 +32,10 @@ const Description = () => {
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0, duration: 0.4 }}>
-            <p className="text-[#EAC57E] bg-[#1F2123] px-4 py-2 rounded-xl 2xl:rounded-full text-base lg:text-[18px]  w-fit">
+            <p className="text-[#EAC57E] bg-[#1F2123] px-4 py-2 rounded-xl 2xl:rounded-full w-fit">
               Maximize Your Ethereum&apos;s Potential
             </p>
-            <p className="text-sm lg:text-base">
+            <p className="">
               With our platform, your Ethereum isn&apos;t just sitting idle.
               It&apos;s an active asset, primed to fund your next venture or
               idea.
@@ -46,10 +46,10 @@ const Description = () => {
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0, duration: 0.4 }}>
-            <p className="text-[#EAC57E] bg-[#1F2123] px-4 py-2 rounded-xl 2xl:rounded-full text-base lg:text-[18px]  w-fit">
+            <p className="text-[#EAC57E] bg-[#1F2123] px-4 py-2 rounded-xl 2xl:rounded-full w-fit">
               Safety First
             </p>
-            <p className="text-sm lg:text-base">
+            <p className="">
               In collaboration with Kleros, we guarantee the utmost security for
               every transaction. Kleros a renowned decentralized arbitration
               service, ensures that every swap is executed with precision and
@@ -61,10 +61,10 @@ const Description = () => {
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0, duration: 0.4 }}>
-            <p className="text-[#EAC57E] bg-[#1F2123] px-4 py-2 rounded-xl 2xl:rounded-full text-base lg:text-[18px] w-fit">
+            <p className="text-[#EAC57E] bg-[#1F2123] px-4 py-2 rounded-xl 2xl:rounded-full w-fit">
               Global Operation, Personalized Experience
             </p>
-            <p className="text-sm lg:text-base">
+            <p className="">
               Our platform is designed for global accessibility, ensuring that no
               matter where you are, you can unlock your liquidity. Plus, we
               ensure a personalized and confidential experience, understanding
@@ -72,8 +72,37 @@ const Description = () => {
             </p>
           </motion.div>
         </div>
-
-        <div className="text-[16px] flex flex-col md:flex-row gap-5 items-center justify-between w-full">
+        <p className="text-center">
+            Follow us on Twitter and join Telegram for real-time updates and
+            community interactions:
+          </p>
+          <div className="flex flex-row items-center justify-center gap-4">
+            <motion.a
+              href="https://t.me/LPSwapBot"
+              target="_blank"
+              rel="noopener noreferrer">
+              <Image
+                src={"/tg.svg"}
+                className="opacity-100 duration-100 ease-linear transition-all hover:opacity-80"
+                alt="tg"
+                width={30}
+                height={37}
+              />
+            </motion.a>
+            <motion.a
+              href="https://x.com/0xLiquiditySwap"
+              target="_blank"
+              rel="noopener noreferrer">
+              <Image
+                src={"/tw.svg"}
+                className="opacity-100 duration-100 ease-linear transition-all hover:opacity-80"
+                alt="tg"
+                width={30}
+                height={37}
+              />
+            </motion.a>
+          </div>
+        <div className="text-sm flex flex-col md:flex-row gap-5 items-center justify-between w-full">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
