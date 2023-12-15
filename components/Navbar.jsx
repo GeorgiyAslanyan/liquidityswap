@@ -34,39 +34,10 @@ const Navbar = () => {
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.4 }}>
-            Price ETH: <br className='block sm:hidden'/> <span className="text-[#EAC57E]">$2,179</span>
+            <span className="whitespace-nowrap">Price ETH:</span> <br className='block sm:hidden'/> <span className="text-[#EAC57E]">$2,179</span>
           </motion.p>
           <div className="flex gap-4 sm:gap-5 items-center">
-            <motion.a
-              initial={{ opacity: 0, y: -20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.8, duration: 0.4 }}
-              href="https://t.me/LPSwapBot"
-              target="_blank"
-              rel="noopener noreferrer">
-              <Image
-                src={"/tg.svg"}
-                className="opacity-100 duration-100 ease-linear transition-all hover:opacity-80"
-                alt="tg"
-                width={20}
-                height={27}
-              />
-            </motion.a>
-            <motion.a
-              initial={{ opacity: 0, y: -20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1, duration: 0.4 }}
-              href="https://x.com/0xLiquiditySwap"
-              target="_blank"
-              rel="noopener noreferrer">
-              <Image
-                src={"/tw.svg"}
-                className="opacity-100 duration-100 ease-linear transition-all hover:opacity-80"
-                alt="tg"
-                width={20}
-                height={27}
-              />
-            </motion.a>
+            
             <motion.a
               initial={{ opacity: 0, y: -20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -75,8 +46,20 @@ const Navbar = () => {
               target="_blank"
               className="flex items-center"
               rel="noopener noreferrer">
-              <button className="rounded-xl flex items-center font-semibold bg-[#1F2123] hover:bg-[#36393c] text-sm duration-150 ease-linear transition-all text-white py-2 px-6 h-full">
-                Docs
+              <button className="rounded-xl flex gap-2 hover:gap-4 items-center font-semibold bg-[#1F2123] hover:bg-[#36393c] text-sm duration-150 ease-linear transition-all text-white py-2 px-2 md:px-6 h-full">
+                Documentation <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="w-4 h-4">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                  />
+                </svg>
               </button>
             </motion.a>
           </div>

@@ -5,7 +5,6 @@ import Image from "next/image";
 import Lines from "./Lines";
 import InfinitySign from "./InfinitySign";
 import LinesTop from "./LinesTop";
-import LinesBottom from "./LinesBottom";
 //
 
 const arr = [
@@ -61,9 +60,22 @@ const Hero = () => {
           <motion.a
             href="https://t.me/LPSwapBot"
             target="_blank"
+            className="flex justify-center"
             rel="noopener noreferrer">
-            <button className="items-center w-[90%] sm:w-fit rounded-2xl bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all text-white py-3 px-5 h-full">
-              Apply now
+            <button className="items-center w-[90%] justify-center flex hover:gap-4 gap-2 sm:w-fit rounded-2xl bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all text-white py-3 px-5 h-full">
+              Apply now <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="w-6 h-6">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                  />
+                </svg>
             </button>
           </motion.a>
         </div>
@@ -79,9 +91,11 @@ const Hero = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0, duration: 0.7 }}>
-            <span className="text-[#EAC57E]">Pioneering</span> Liquidity <span className="text-[#EAC57E]">Solutions</span> in Decentralized Finance
+            <span className="text-[#EAC57E]">Pioneering</span> Liquidity{" "}
+            <span className="text-[#EAC57E]">Solutions</span> in Decentralized
+            Finance
           </motion.p>
-          
+
           <p className="text-justify">
             Launched in September 2023, 0xLiquidity emerged as a new protocol in
             the DeFi space, revolutionizing how liquidity is managed and
@@ -138,22 +152,79 @@ const Hero = () => {
             ))}
           </div>
           <div className="flex flex-col md:flex-row items-center justify-center gap-4">
-          <motion.a
-            href="https://t.me/LPSwapBot"
-            target="_blank"
-            rel="noopener noreferrer">
-            <button className="items-center w-[90%] sm:w-fit rounded-2xl bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all text-white py-3 px-5 h-full">
-            Learn more
-            </button>
-          </motion.a>
-          <motion.a
-            href="https://t.me/LPSwapBot"
-            target="_blank"
-            rel="noopener noreferrer">
-            <button className="items-center w-[90%] sm:w-fit rounded-2xl bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all text-white py-3 px-5 h-full">
-            Buy ØxLP
-            </button>
-          </motion.a>
+            <motion.a
+              href="https://t.me/LPSwapBot"
+              target="_blank"
+              className="flex justify-center w-[90%] md:w-fit"
+              rel="noopener noreferrer">
+              <button className="items-center w-[90%] whitespace-nowrap  justify-center flex hover:gap-4 gap-2 sm:w-fit rounded-2xl bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all text-white py-3 px-5 h-full">
+                Learn more <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="w-6 h-6">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                  />
+                </svg>
+              </button>
+            </motion.a>
+            <motion.a
+              href="https://t.me/LPSwapBot"
+              target="_blank"
+              className="flex justify-center w-[90%] md:w-fit"
+              rel="noopener noreferrer">
+              <button className="items-center whitespace-nowrap justify-center w-[90%] flex hover:gap-4 gap-2 sm:w-fit rounded-2xl bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all text-white py-3 px-5 h-full">
+                Buy ØxLP{" "}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="w-6 h-6">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                  />
+                </svg>
+              </button>
+            </motion.a>
+          </div>
+          <p className="text-center">
+            Follow us on Twitter and join Telegram for real-time updates and
+            community interactions:
+          </p>
+          <div className="flex flex-row items-center justify-center gap-4">
+            <motion.a
+              href="https://t.me/LPSwapBot"
+              target="_blank"
+              rel="noopener noreferrer">
+              <Image
+                src={"/tg.svg"}
+                className="opacity-100 duration-100 ease-linear transition-all hover:opacity-80"
+                alt="tg"
+                width={30}
+                height={37}
+              />
+            </motion.a>
+            <motion.a
+              href="https://x.com/0xLiquiditySwap"
+              target="_blank"
+              rel="noopener noreferrer">
+              <Image
+                src={"/tw.svg"}
+                className="opacity-100 duration-100 ease-linear transition-all hover:opacity-80"
+                alt="tg"
+                width={30}
+                height={37}
+              />
+            </motion.a>
           </div>
           <div className="w-full relative pointer-events-none">
             <LinesTop />
@@ -169,21 +240,21 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          
+
           <div className="absolute pointer-events-none rotate-180 w-full flex items-center justify-center left-0 top-[90px]">
-            <div className='w-[90%] relative'>
-            <LinesTop />
-            <div className="absolute flex justify-center items-center top-0 left-0 w-full h-full z-1">
-              <div className=" ">
-                <Image
-                  width={600}
-                  height={300}
-                  className="w-full opacity-20"
-                  alt="fade"
-                  src={"/fade.svg"}
-                />
+            <div className="w-[90%] relative">
+              <LinesTop />
+              <div className="absolute flex justify-center items-center top-0 left-0 w-full h-full z-1">
+                <div className=" ">
+                  <Image
+                    width={600}
+                    height={300}
+                    className="w-full opacity-20"
+                    alt="fade"
+                    src={"/fade.svg"}
+                  />
+                </div>
               </div>
-            </div>
             </div>
           </div>
         </div>
