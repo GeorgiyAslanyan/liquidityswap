@@ -136,12 +136,35 @@ const Hero = () => {
             us, as we gear up to enter the main phase of our implementation
             strategy.
           </p>
-          <div className="w-full">
+          <div className="w-full relative">
             <LinesTop />
+            <div className="absolute flex justify-center items-center top-0 left-0 w-full h-full z-1">
+              <div className=" ">
+                <Image
+                  width={600}
+                  height={300}
+                  className="w-full opacity-30"
+                  alt="fade"
+                  src={"/fade.svg"}
+                />
+              </div>
+            </div>
           </div>
+          
           <div className="absolute rotate-180 w-full flex items-center justify-center left-0 top-[90px]">
-            <div className='w-[90%]'>
+            <div className='w-[90%] relative'>
             <LinesTop />
+            <div className="absolute flex justify-center items-center top-0 left-0 w-full h-full z-1">
+              <div className=" ">
+                <Image
+                  width={600}
+                  height={300}
+                  className="w-full opacity-20"
+                  alt="fade"
+                  src={"/fade.svg"}
+                />
+              </div>
+            </div>
             </div>
           </div>
         </div>
