@@ -6,7 +6,7 @@ import Lines from "./Lines";
 import InfinitySign from "./InfinitySign";
 import LinesTop from "./LinesTop";
 import LinesBottom from "./LinesBottom";
-//[url('/background.jpg')]
+//
 
 const arr = [
   {
@@ -22,7 +22,7 @@ const arr = [
 
 const Hero = () => {
   return (
-    <div className="bg-black bg-cover min-h-screen min-w-screen pb-[70px] rounded-2xl sm:rounded-3xl border border-[#EAC57E] mt-[72px] md:mt-5 lg:mt-10 m-3 md:m-5 lg:m-10 relative ">
+    <div className="bg-[url('/background.svg')] bg-234 md:bg-contain min-h-screen min-w-screen pb-[70px] rounded-2xl sm:rounded-3xl border border-[#EAC57E] mt-[72px] md:mt-5 lg:mt-10 m-3 md:m-5 lg:m-10 relative ">
       <div className="flex flex-col justify-center items-center">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -40,7 +40,7 @@ const Hero = () => {
           viewport={{ once: true }}
           width="100%"
           height="100%"
-          className="pointer-events-none mt-8"
+          className="pointer-events-none mt-8 object-cover md:object-contain h-[350px] md:h-full"
           title="Video tooltip on hover."
           poster="/pre.png"
           muted
@@ -72,7 +72,7 @@ const Hero = () => {
             initial={{ width: 0 }}
             whileInView={{ width: "100%" }}
             transition={{ delay: 0.7, duration: 0.7 }}
-            className="bg-[#161616] border-0 h-[1px]"
+            className="bg-[#a2a2a2] border-0 h-[1px]"
           />
           <motion.p
             className="text-center"
@@ -151,7 +151,7 @@ const Hero = () => {
             </div>
           </div>
           
-          <div className="absolute rotate-180 w-full flex items-center justify-center left-0 top-[60px] md:top-[90px]">
+          <div className="absolute rotate-180 w-full flex items-center justify-center left-0 top-[90px]">
             <div className='w-[90%] relative'>
             <LinesTop />
             <div className="absolute flex justify-center items-center top-0 left-0 w-full h-full z-1">
