@@ -62,7 +62,7 @@ const Hero = () => {
             href="https://t.me/LPSwapBot"
             target="_blank"
             rel="noopener noreferrer">
-            <button className="items-center w-[90%] sm:w-fit rounded-full bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all text-white py-3 px-5 h-full">
+            <button className="items-center w-[90%] sm:w-fit rounded-2xl bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all text-white py-3 px-5 h-full">
               Apply now
             </button>
           </motion.a>
@@ -137,7 +137,25 @@ const Hero = () => {
               </motion.div>
             ))}
           </div>
-          <div className="w-full relative">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4">
+          <motion.a
+            href="https://t.me/LPSwapBot"
+            target="_blank"
+            rel="noopener noreferrer">
+            <button className="items-center w-[90%] sm:w-fit rounded-2xl bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all text-white py-3 px-5 h-full">
+            Learn more
+            </button>
+          </motion.a>
+          <motion.a
+            href="https://t.me/LPSwapBot"
+            target="_blank"
+            rel="noopener noreferrer">
+            <button className="items-center w-[90%] sm:w-fit rounded-2xl bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all text-white py-3 px-5 h-full">
+            Buy ØxLP
+            </button>
+          </motion.a>
+          </div>
+          <div className="w-full relative pointer-events-none">
             <LinesTop />
             <div className="absolute flex justify-center items-center top-0 left-0 w-full h-full z-1">
               <div className=" ">
@@ -152,7 +170,7 @@ const Hero = () => {
             </div>
           </div>
           
-          <div className="absolute rotate-180 w-full flex items-center justify-center left-0 top-[90px]">
+          <div className="absolute pointer-events-none rotate-180 w-full flex items-center justify-center left-0 top-[90px]">
             <div className='w-[90%] relative'>
             <LinesTop />
             <div className="absolute flex justify-center items-center top-0 left-0 w-full h-full z-1">
