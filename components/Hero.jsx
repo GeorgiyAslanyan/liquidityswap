@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Lines from "./Lines";
 import InfinitySign from "./InfinitySign";
+import LinesTop from "./LinesTop";
+import LinesBottom from "./LinesBottom";
 //[url('/background.jpg')]
 
 const arr = [
@@ -38,7 +40,7 @@ const Hero = () => {
           viewport={{ once: true }}
           width="100%"
           height="100%"
-          className="pointer-events-none"
+          className="pointer-events-none mt-8"
           title="Video tooltip on hover."
           poster="/pre.png"
           muted
@@ -73,7 +75,7 @@ const Hero = () => {
             className="bg-[#161616] border-0 h-[1px]"
           />
           <motion.p
-          className="text-center"
+            className="text-center"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0, duration: 0.7 }}>
@@ -89,7 +91,9 @@ const Hero = () => {
                 key={index}>
                 {/* <Image src={"/logo.svg"} alt="logo" width={40} height={40} /> */}
                 <div className="flex flex-col gap-1">
-                  <p className="uppercase text-base text-gray-400">{el.title}</p>
+                  <p className="uppercase text-base text-gray-400">
+                    {el.title}
+                  </p>
                   <p className="">{el.descr}</p>
                 </div>
               </motion.div>
@@ -102,7 +106,7 @@ const Hero = () => {
             enables holders to sell their liquidity, significantly reducing the
             waiting period typically associated with locked funds in DeFi
             projects. This allows devs to create more, invest more, and leverage
-            their abilities to profit more. 
+            their abilities to profit more.
           </p>
           <div className="relative">
             <div>
@@ -125,11 +129,21 @@ const Hero = () => {
               </div>
             </div>
           </div>
-              <p className="text-justify">Over time, the protocol has not only
-            established its effectiveness in meeting market demands, but has
-            also robustly validated the security of its solutions. This success
-            marks a pivotal moment for us, as we gear up to enter the main phase
-            of our implementation strategy.</p>
+          <p className="text-justify">
+            Over time, the protocol has not only established its effectiveness
+            in meeting market demands, but has also robustly validated the
+            security of its solutions. This success marks a pivotal moment for
+            us, as we gear up to enter the main phase of our implementation
+            strategy.
+          </p>
+          <div className="w-full">
+            <LinesTop />
+          </div>
+          <div className="absolute rotate-180 w-full flex items-center justify-center left-0 top-[90px]">
+            <div className='w-[90%]'>
+            <LinesTop />
+            </div>
+          </div>
         </div>
       </div>
     </div>
