@@ -72,7 +72,7 @@ const Hero = () => {
             initial={{ width: 0 }}
             whileInView={{ width: "100%" }}
             transition={{ delay: 0.7, duration: 0.7 }}
-            className="bg-[#a2a2a2] border-0 h-[1px]"
+            className="bg-gradient-to-r from-transparent via-[#a2a2a2] to-transparent border-0 h-[1px]"
           />
           <motion.p
             className="text-center"
