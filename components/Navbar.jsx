@@ -36,7 +36,7 @@ const Navbar = () => {
             transition={{ delay: 0.6, duration: 0.4 }}>
             Price ETH: <br className='block sm:hidden'/> <span className="text-[#EAC57E]">$2,179</span>
           </motion.p>
-          <div className="flex gap-1 sm:gap-4 items-center">
+          <div className="flex gap-4 sm:gap-5 items-center">
             <motion.a
               initial={{ opacity: 0, y: -20 }}
               whileInView={{ opacity: 1, y: 0 }}
