@@ -9,7 +9,7 @@ const Description = () => {
     <div className="min-h-screen flex items-center justify-center min-w-screen pb-[70px]">
       <div className="mx-3 md:mx-5 lg:mx-10 flex flex-col gap-[51px]">
         <motion.h1 className="w-full pt-10 lg:pt-0 text-center ">
-          Why Choose Our Service?
+          Why Us?
         </motion.h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-10">
           <motion.div
@@ -21,7 +21,7 @@ const Description = () => {
               Immediate Access
             </p>{" "}
             <p className="text-sm lg:text-base">
-              Our service offers a unique solution that allows project creators
+              Our platform offers a unique solution that allows project creators
               to access their locked ETH without waiting for lengthy lock-in
               periods to expire. This ensures that innovation never has to take
               a back seat due to locked funds.
@@ -36,7 +36,7 @@ const Description = () => {
               Maximize Your Ethereum&apos;s Potential
             </p>
             <p className="text-sm lg:text-base">
-              With our service, your Ethereum isn&apos;t just sitting idle.
+              With our platform, your Ethereum isn&apos;t just sitting idle.
               It&apos;s an active asset, primed to fund your next venture or
               idea.
             </p>
@@ -65,7 +65,7 @@ const Description = () => {
               Global Operation, Personalized Experience
             </p>
             <p className="text-sm lg:text-base">
-              Our service is designed for global accessibility, ensuring that no
+              Our platform is designed for global accessibility, ensuring that no
               matter where you are, you can unlock your liquidity. Plus, we
               ensure a personalized and confidential experience, understanding
               the unique needs and privacy concerns of each client.

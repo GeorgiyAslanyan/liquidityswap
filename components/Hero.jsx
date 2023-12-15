@@ -79,26 +79,9 @@ const Hero = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0, duration: 0.7 }}>
-            Pioneering Liquidity Solutions in Decentralized Finance
+            <span className="text-[#EAC57E]">Pioneering</span> Liquidity <span className="text-[#EAC57E]">Solutions</span> in Decentralized Finance
           </motion.p>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            {arr.map((el, index) => (
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: (index + 1) * 0.5, duration: 0.7 }}
-                className="flex gap-3 p-3 items-start rounded-xl bg-[#1F2123]"
-                key={index}>
-                {/* <Image src={"/logo.svg"} alt="logo" width={40} height={40} /> */}
-                <div className="flex flex-col gap-1">
-                  <p className="uppercase text-base text-gray-400">
-                    {el.title}
-                  </p>
-                  <p className="">{el.descr}</p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
+          
           <p className="text-justify">
             Launched in September 2023, 0xLiquidity emerged as a new protocol in
             the DeFi space, revolutionizing how liquidity is managed and
@@ -136,6 +119,24 @@ const Hero = () => {
             us, as we gear up to enter the main phase of our implementation
             strategy.
           </p>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            {arr.map((el, index) => (
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: (index + 1) * 0.5, duration: 0.7 }}
+                className="flex gap-3 p-3 items-start rounded-xl bg-[#1F2123]"
+                key={index}>
+                {/* <Image src={"/logo.svg"} alt="logo" width={40} height={40} /> */}
+                <div className="flex flex-col gap-1">
+                  <p className="uppercase text-base text-gray-400">
+                    {el.title}
+                  </p>
+                  <p className="">{el.descr}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
           <div className="w-full relative">
             <LinesTop />
             <div className="absolute flex justify-center items-center top-0 left-0 w-full h-full z-1">

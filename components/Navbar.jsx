@@ -75,7 +75,7 @@ const Navbar = () => {
               target="_blank"
               className="flex items-center"
               rel="noopener noreferrer">
-              <button className="rounded-xl font-semibold bg-[#1F2123] hover:bg-[#36393c] text-sm duration-150 ease-linear transition-all text-white py-2 px-6 h-full">
+              <button className="rounded-xl flex items-center font-semibold bg-[#1F2123] hover:bg-[#36393c] text-sm duration-150 ease-linear transition-all text-white py-2 px-6 h-full">
                 Docs
               </button>
             </motion.a>
