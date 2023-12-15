@@ -22,7 +22,7 @@ const arr = [
 
 const Hero = () => {
   return (
-    <div className="bg-black bg-cover min-h-screen min-w-screen pb-[70px] rounded-3xl border border-[#EAC57E] m-10 relative ">
+    <div className="bg-black bg-cover min-h-screen min-w-screen pb-[70px] rounded-2xl sm:rounded-3xl border border-[#EAC57E] mt-[72px] md:mt-5 lg:mt-10 m-3 md:m-5 lg:m-10 relative ">
       <div className="flex flex-col justify-center items-center">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -62,12 +62,12 @@ const Hero = () => {
             href="https://t.me/LPSwapBot"
             target="_blank"
             rel="noopener noreferrer">
-            <button className="text-[25px] items-center rounded-full bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all text-white py-3 px-5 h-full">
+            <button className="items-center w-[90%] sm:w-fit rounded-full bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all text-white py-3 px-5 h-full">
               Apply now
             </button>
           </motion.a>
         </div>
-        <div className="flex flex-col gap-6 pt-10 w-full px-14">
+        <div className="flex flex-col gap-6 pt-10 w-full px-5 md:px-14">
           <motion.hr
             initial={{ width: 0 }}
             whileInView={{ width: "100%" }}
@@ -81,7 +81,7 @@ const Hero = () => {
             transition={{ delay: 0, duration: 0.7 }}>
             Pioneering Liquidity Solutions in Decentralized Finance
           </motion.p>
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {arr.map((el, index) => (
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
@@ -151,7 +151,7 @@ const Hero = () => {
             </div>
           </div>
           
-          <div className="absolute rotate-180 w-full flex items-center justify-center left-0 top-[90px]">
+          <div className="absolute rotate-180 w-full flex items-center justify-center left-0 top-[60px] md:top-[90px]">
             <div className='w-[90%] relative'>
             <LinesTop />
             <div className="absolute flex justify-center items-center top-0 left-0 w-full h-full z-1">

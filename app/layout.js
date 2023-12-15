@@ -11,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={'text-2xl text-white bg-[#1F2123]'}>
+      <body className={'text-lg md:text-xl lg:text-2xl text-white bg-[#1F2123]'}>
         <Navbar />
         {children}
         <Cookies />
