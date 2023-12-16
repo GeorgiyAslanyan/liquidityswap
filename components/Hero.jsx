@@ -59,6 +59,7 @@ const Hero = () => {
           title="Video tooltip on hover."
           poster="/pre.png"
           muted
+          playsInline
           loop
           autoPlay>
           <source src="/clock_alpha.webm" type="video/webm" />
