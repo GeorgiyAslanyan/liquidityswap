@@ -18,12 +18,13 @@ const arr = [
   },
   { title: "In progress", descr: "Advanced Liquidity Locker Solutions" },
 ];
-
+//[url('/background.svg')]
 const Hero = () => {
   return (
-    <div className="bg-[url('/background.svg')] bg-234 md:bg-contain min-h-screen min-w-screen rounded-2xl pb-[60px] xl:pb-0
-    sm:rounded-3xl border border-[#EAC57E] mt-[72px] md:mt-5 lg:mt-10 mx-3 md:mx-5 lg:mx-10 relative ">
-      <div className="absolute pointer-events-none rotate-180 w-full flex items-center justify-center left-0 top-[70px] md:top-[90px]">
+    <div className="bg-black min-h-screen min-w-screen rounded-2xl pb-[60px] xl:pb-0
+    sm:rounded-3xl border border-[#EAC57E] mt-[72px] md:mt-5 lg:mt-10 mx-3 md:mx-5 lg:mx-10 relative overflow-hidden">
+      <div className="absolute opacity-50 pointer-events-none bg-[url('/clearbg.png')] bg-234 md:bg-contain bg-repeat z-[3] w-full h-full "></div>
+      <div className="z-[5] absolute pointer-events-none rotate-180 w-full flex items-center justify-center left-0 top-[70px] md:top-[90px]">
         <div className="w-[90%] relative">
           <LinesTop />
           <div className="absolute flex justify-center items-center top-0 left-0 w-full h-full z-1">
@@ -39,7 +40,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center">
+      <div className="z-[5] relative flex flex-col justify-center items-center">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -57,7 +58,7 @@ const Hero = () => {
           width="100%"
           height="100%"
           src="/clock_alpha.gif"
-          className="pointer-events-none block md:hidden mt-12 object-cover md:object-contain h-[350px] md:h-full"
+          className="pointer-events-none z-[2] block md:hidden mt-12 object-cover md:object-contain h-[350px] md:h-full"
           alt="Video tooltip on hover."
         />
         <motion.video

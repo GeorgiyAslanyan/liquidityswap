@@ -6,7 +6,7 @@ const Cookies = () => {
   return (
     <>
       {cookie && (
-        <div className="fixed backdrop-blur-lg bg-black/50 px-3 md:px-10 py-3 md:py-5 bottom-0 w-screen">
+        <div className="fixed z-50 backdrop-blur-lg bg-black/50 px-3 md:px-10 py-3 md:py-5 bottom-0 w-screen">
           <div className="flex flex-col md:flex-row gap-3 md:gap-10 justify-between items-center">
             <p className="text-sm">
             This website uses cookies to offer you a better browsing experience. <br /> Find out more on how we use cookies.
