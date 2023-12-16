@@ -15,7 +15,7 @@ const InfinitySign = () => {
           <rect width="350" height="200" x="0" y="0"></rect>
         </clipPath>
       </defs>
-      <g clip-path="url(#__lottie_element_55)">
+      <g clipPath="url(#__lottie_element_55)">
         <g
           transform="matrix(1.635159969329834,0,0,1.635159969329834,122.67488098144531,73.83744049072266)"
           opacity="1"

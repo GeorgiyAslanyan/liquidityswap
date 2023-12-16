@@ -21,7 +21,23 @@ const arr = [
 
 const Hero = () => {
   return (
-    <div className="bg-[url('/background.svg')] bg-234 md:bg-contain min-h-screen min-w-screen pb-[70px] rounded-2xl sm:rounded-3xl border border-[#EAC57E] mt-[72px] md:mt-5 lg:mt-10 m-3 md:m-5 lg:m-10 relative ">
+    <div className="bg-[url('/background.svg')] bg-234 md:bg-contain min-h-screen min-w-screen pb-[70px] rounded-2xl sm:rounded-3xl border border-[#EAC57E] mt-[72px] md:mt-5 lg:mt-10 mx-3 md:mx-5 lg:mx-10 relative ">
+      <div className="absolute pointer-events-none rotate-180 w-full flex items-center justify-center left-0 top-[90px]">
+            <div className="w-[90%] relative">
+              <LinesTop />
+              <div className="absolute flex justify-center items-center top-0 left-0 w-full h-full z-1">
+                <div className=" ">
+                  <Image
+                    width={600}
+                    height={300}
+                    className="w-full opacity-20"
+                    alt="fade"
+                    src={"/fade.svg"}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
       <div className="flex flex-col justify-center items-center">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -47,7 +63,7 @@ const Hero = () => {
           autoPlay>
           <source src="/clock_alpha.webm" type="video/webm" />
         </motion.video>
-        <div className="flex text-center flex-col gap-7">
+        <div className="flex text-center flex-col gap-7 -mt-12">
           <motion.p>
             <span className="text-[#EAC57E]">Do not wait</span> until the end of
             the liquidity lock-in period;
@@ -79,7 +95,7 @@ const Hero = () => {
             </button>
           </motion.a>
         </div>
-        <div className="relative w-[90%]">
+        <div className="relative w-[90%] xl:-translate-y-14">
             <div>
               <Lines />
             </div>
@@ -100,13 +116,8 @@ const Hero = () => {
               </div>
             </div>
           </div>
-        <div className="flex flex-col gap-6 pt-10 w-full px-5 md:px-14">
-          <motion.hr
-            initial={{ width: 0 }}
-            whileInView={{ width: "100%" }}
-            transition={{ delay: 0.7, duration: 0.7 }}
-            className="bg-gradient-to-r from-transparent via-[#a2a2a2] to-transparent border-0 h-[1px]"
-          />
+        <div className="flex flex-col gap-6 w-full px-5 md:px-14 xl:-translate-y-24">
+          
           <motion.p
             className="text-center"
             initial={{ opacity: 0 }}
@@ -144,7 +155,7 @@ const Hero = () => {
                 key={index}>
                 {/* <Image src={"/logo.svg"} alt="logo" width={40} height={40} /> */}
                 <div className="flex flex-col gap-1">
-                  <p className="uppercase text-base text-gray-400">
+                  <p className="uppercase text-base text-[#EAC57E]">
                     {el.title}
                   </p>
                   <p className="">{el.descr}</p>
@@ -158,7 +169,7 @@ const Hero = () => {
               target="_blank"
               className="flex justify-center w-[90%] md:w-fit"
               rel="noopener noreferrer">
-              <button className="items-center text-base lg:text-xl w-[90%] whitespace-nowrap  justify-center flex hover:gap-4 gap-2 sm:w-fit rounded-2xl bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all text-white py-3 px-5 h-full">
+              <button className="items-center min-w-[188px] text-base lg:text-xl w-[90%] whitespace-nowrap  justify-center flex hover:gap-4 gap-2 sm:w-fit rounded-2xl bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all text-white py-3 px-5 h-full">
                 Learn more <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -179,7 +190,7 @@ const Hero = () => {
               target="_blank"
               className="flex justify-center w-[90%] md:w-fit"
               rel="noopener noreferrer">
-              <button className="items-center text-base lg:text-xl whitespace-nowrap justify-center w-[90%] flex hover:gap-4 gap-2 sm:w-fit rounded-2xl bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all text-white py-3 px-5 h-full">
+              <button className="items-center text-base min-w-[188px] lg:text-xl whitespace-nowrap justify-center w-[90%] flex hover:gap-4 gap-2 sm:w-fit rounded-2xl bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all text-white py-3 px-5 h-full">
                 Buy ØxLP{" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -197,8 +208,36 @@ const Hero = () => {
               </button>
             </motion.a>
           </div>
+          <div className="flex flex-row items-center justify-center gap-4">
+            <motion.a
+            className="rounded-xl flex items-center justify-center bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all p-3"
+              href="https://t.me/LPSwapBot"
+              target="_blank"
+              rel="noopener noreferrer">
+              <Image
+                src={"/tg.svg"}
+                className=""
+                alt="tg"
+                width={30}
+                height={37}
+              />
+            </motion.a>
+            <motion.a
+            className="rounded-xl flex items-center justify-center bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all p-3"
+              href="https://x.com/0xLiquiditySwap"
+              target="_blank"
+              rel="noopener noreferrer">
+              <Image
+                src={"/tw.svg"}
+                className=""
+                alt="tg"
+                width={30}
+                height={37}
+              />
+            </motion.a>
+          </div>
           
-          <div className="w-full relative pointer-events-none">
+          <div className="w-full relative pointer-events-none -mt-20">
             <LinesTop />
             <div className="absolute flex justify-center items-center top-0 left-0 w-full h-full z-1">
               <div className=" ">
@@ -213,22 +252,7 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="absolute pointer-events-none rotate-180 w-full flex items-center justify-center left-0 top-[90px]">
-            <div className="w-[90%] relative">
-              <LinesTop />
-              <div className="absolute flex justify-center items-center top-0 left-0 w-full h-full z-1">
-                <div className=" ">
-                  <Image
-                    width={600}
-                    height={300}
-                    className="w-full opacity-20"
-                    alt="fade"
-                    src={"/fade.svg"}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
+          
         </div>
       </div>
     </div>

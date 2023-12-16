@@ -8,7 +8,7 @@ const Description = () => {
   return (
     <div className="min-h-screen flex items-center justify-center min-w-screen pb-[70px]">
       <div className="mx-3 md:mx-5 lg:mx-10 flex flex-col gap-[51px]">
-        <motion.h1 className="w-full pt-10 lg:pt-0 text-center ">
+        <motion.h1 className="w-full pt-[51px] text-center ">
           Why Us?
         </motion.h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-10 text-base lg:text-xl">
@@ -72,36 +72,13 @@ const Description = () => {
             </p>
           </motion.div>
         </div>
-        <p className="text-center">
-            Follow us on Twitter and join Telegram for real-time updates and
-            community interactions:
-          </p>
-          <div className="flex flex-row items-center justify-center gap-4">
-            <motion.a
-              href="https://t.me/LPSwapBot"
-              target="_blank"
-              rel="noopener noreferrer">
-              <Image
-                src={"/tg.svg"}
-                className="opacity-100 duration-100 ease-linear transition-all hover:opacity-80"
-                alt="tg"
-                width={30}
-                height={37}
-              />
-            </motion.a>
-            <motion.a
-              href="https://x.com/0xLiquiditySwap"
-              target="_blank"
-              rel="noopener noreferrer">
-              <Image
-                src={"/tw.svg"}
-                className="opacity-100 duration-100 ease-linear transition-all hover:opacity-80"
-                alt="tg"
-                width={30}
-                height={37}
-              />
-            </motion.a>
-          </div>
+        
+          <motion.hr
+            initial={{ width: 0 }}
+            whileInView={{ width: "100%" }}
+            transition={{ delay: 0.7, duration: 0.7 }}
+            className="bg-gradient-to-r from-transparent via-[#a2a2a2] to-transparent border-0 h-[1px]"
+          />
         <div className="text-sm flex flex-col md:flex-row gap-5 items-center justify-between w-full">
           <motion.div
             initial={{ opacity: 0 }}
