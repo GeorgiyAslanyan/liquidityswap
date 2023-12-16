@@ -95,7 +95,7 @@ const Hero = () => {
             </button>
           </motion.a>
         </div>
-        <div className="relative w-[90%] xl:-translate-y-14">
+        <div className="relative w-[90%] pointer-events-none xl:-translate-y-14">
             <div>
               <Lines />
             </div>
