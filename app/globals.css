@@ -34,8 +34,4 @@ body {
 
 button p {
   line-height: 100% !important;
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  -webkit-justify-items: center;
 }
