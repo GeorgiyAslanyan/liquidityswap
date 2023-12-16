@@ -77,7 +77,7 @@ const Hero = () => {
           autoPlay>
           <source src="/clock_alpha.webm" type="video/webm" />
         </motion.video>
-        <div className="flex text-center flex-col gap-7 -mt-8 md:-mt-12">
+        <div className="flex text-center z-[7] flex-col gap-7 -mt-8 md:-mt-12">
           <motion.p>
             <span className="text-[#EAC57E]">Do not wait</span> until the end of
             the liquidity lock-in period;
