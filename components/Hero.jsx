@@ -23,7 +23,7 @@ const Hero = () => {
   return (
     <div className="bg-black min-h-screen min-w-screen rounded-2xl pb-[60px] xl:pb-0
     sm:rounded-3xl border border-[#EAC57E] mt-[72px] md:mt-5 lg:mt-10 mx-3 md:mx-5 lg:mx-10 relative overflow-hidden">
-      <div className="absolute opacity-50 pointer-events-none bg-[url('/clearbg.png')] bg-234 md:bg-contain bg-repeat z-[3] w-full h-full "></div>
+      <div className="absolute opacity-50 pointer-events-none bg-[url('/clearbg.png')] bg-234 md:bg-contain bg-repeat z-[6] w-full h-full "></div>
       <div className="z-[6] absolute pointer-events-none rotate-180 w-full flex items-center justify-center left-0 top-[70px] md:top-[90px]">
         <div className="w-[90%] relative">
           <LinesTop />
@@ -40,13 +40,13 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="z-[5] relative flex flex-col justify-center items-center">
+      <div className="relative flex flex-col justify-center items-center">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.4 }}
           viewport={{ once: true }}
-          className="flex gap-5 items-center z-[5] absolute left-6 top-6">
+          className="flex gap-5 items-center z-[7] absolute left-6 top-6">
           <Image src={"/logo.svg"} alt="logo" width={41} height={40} />
           <p className="">ØxLiquidity</p>
         </motion.div>
@@ -58,7 +58,7 @@ const Hero = () => {
           width="100%"
           height="100%"
           src="/clock_alpha.gif"
-          className="pointer-events-none z-[-1] block md:hidden mt-12 object-cover md:object-contain h-[350px] md:h-full"
+          className="pointer-events-none z-[3] block md:hidden mt-12 object-cover md:object-contain h-[350px] md:h-full"
           alt="Video tooltip on hover."
         />
         <motion.video
@@ -92,7 +92,7 @@ const Hero = () => {
               target="_blank"
               className="flex self-center justify-center w-fit"
               rel="noopener noreferrer">
-              <button className="items-center text-base min-w-[188px] lg:text-xl whitespace-nowrap justify-center w-fit flex hover:gap-4 gap-2 sm:w-fit rounded-2xl bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all text-white py-3 px-5 h-full">
+              <button className="items-center relative z-[7] text-base min-w-[188px] lg:text-xl whitespace-nowrap justify-center w-fit flex hover:gap-4 gap-2 sm:w-fit rounded-2xl bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all text-white py-3 px-5 h-full">
                 Apply now{" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -126,7 +126,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-6 w-full px-5 md:px-14 xl:-translate-y-24">
+        <div className="flex flex-col z-[7] gap-6 w-full px-5 md:px-14 xl:-translate-y-24">
           <motion.p
             className="text-center"
             initial={{ opacity: 0 }}
@@ -154,7 +154,7 @@ const Hero = () => {
             us, as we gear up to enter the main phase of our implementation
             strategy.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 relative z-[7] sm:grid-cols-3 gap-4">
             {arr.map((el, index) => (
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
@@ -172,7 +172,7 @@ const Hero = () => {
               </motion.div>
             ))}
           </div>
-          <div className="flex flex-col md:flex-row items-center justify-center gap-4">
+          <div className="flex flex-col md:flex-row relative z-[7] items-center justify-center gap-4">
             <motion.a
               href="https://t.me/LPSwapBot"
               target="_blank"
@@ -218,7 +218,7 @@ const Hero = () => {
               </button>
             </motion.a>
           </div>
-          <div className="flex flex-row items-center justify-center gap-4">
+          <div className="flex flex-row relative z-[7] items-center justify-center gap-4">
             <motion.a
               className="rounded-xl flex items-center justify-center bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all p-3"
               href="https://t.me/LPSwapBot"
@@ -247,7 +247,7 @@ const Hero = () => {
             </motion.a>
           </div>
 
-          <div className="w-full relative pointer-events-none -mt-5 md:-mt-20">
+          <div className="w-full relative z-[7] pointer-events-none -mt-5 md:-mt-20">
             <LinesTop />
             <div className="absolute flex justify-center items-center top-0 left-0 w-full h-full z-1">
               <div className=" ">
