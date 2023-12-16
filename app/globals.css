@@ -31,7 +31,3 @@ body {
   font-weight: 500;
   color: rgb(var(--foreground-rgb));
 }
-
-button {
-  line-height: 100% !important;
-}
