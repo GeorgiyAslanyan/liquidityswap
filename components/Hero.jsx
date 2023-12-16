@@ -93,7 +93,7 @@ const Hero = () => {
               className="flex self-center justify-center w-fit"
               rel="noopener noreferrer">
               <button className="items-center relative z-[7] text-base min-w-[188px] lg:text-xl whitespace-nowrap justify-center w-fit flex hover:gap-4 gap-2 sm:w-fit rounded-2xl bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all text-white py-3 px-5 h-full">
-                Apply now{" "}
+               <p>Apply now</p> {" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -179,7 +179,7 @@ const Hero = () => {
               className="flex justify-center w-[90%] md:w-fit"
               rel="noopener noreferrer">
               <button className="items-center min-w-[188px] text-base lg:text-xl w-[90%] whitespace-nowrap  justify-center flex hover:gap-4 gap-2 sm:w-fit rounded-2xl bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all text-white py-3 px-5 h-full">
-                Learn more{" "}
+               <p>Learn more</p> {" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -201,7 +201,7 @@ const Hero = () => {
               className="flex justify-center w-[90%] md:w-fit"
               rel="noopener noreferrer">
               <button className="items-center text-base min-w-[188px] lg:text-xl whitespace-nowrap justify-center w-[90%] flex hover:gap-4 gap-2 sm:w-fit rounded-2xl bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all text-white py-3 px-5 h-full">
-                Buy ØxLP{" "}
+                <p>Buy ØxLP</p>{" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"

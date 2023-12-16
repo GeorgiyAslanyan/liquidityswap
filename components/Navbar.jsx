@@ -47,7 +47,7 @@ const Navbar = () => {
               className="flex items-center"
               rel="noopener noreferrer">
               <button className="rounded-xl flex gap-2 hover:gap-4 items-center font-semibold bg-[#1F2123] hover:bg-[#36393c] text-sm duration-150 ease-linear transition-all text-white py-2 px-2 md:px-6 h-full">
-                <p className="flex items-center">Documentation</p> <svg
+                <p>Documentation</p> <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"

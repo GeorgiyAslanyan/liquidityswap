@@ -32,8 +32,9 @@ body {
   color: rgb(var(--foreground-rgb));
 }
 
-button {
-  align-items: center;
-  flex-direction: row;
-  -webkit-align-items: center;
+button p {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  -webkit-justify-items: center;
 }
