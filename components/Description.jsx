@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const Description = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center min-w-screen pb-[70px]">
+    <div className=" flex items-center justify-center min-w-screen pb-[70px]">
       <div className="mx-3 md:mx-5 lg:mx-10 flex flex-col gap-[51px]">
         <motion.h1 className="w-full pt-[51px] text-center ">
           Why Us?
