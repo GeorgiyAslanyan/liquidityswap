@@ -237,7 +237,7 @@ const Hero = () => {
             </motion.a>
           </div>
           
-          <div className="w-full relative pointer-events-none -mt-20">
+          <div className="w-full relative pointer-events-none -mt-5 md:-mt-20">
             <LinesTop />
             <div className="absolute flex justify-center items-center top-0 left-0 w-full h-full z-1">
               <div className=" ">
