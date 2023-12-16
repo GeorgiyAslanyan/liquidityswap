@@ -57,7 +57,7 @@ const Hero = () => {
           viewport={{ once: true }}
           width="100%"
           height="100%"
-          className="pointer-events-none z-[3] mt-8 object-cover md:object-contain h-[350px] md:h-full"
+          className="pointer-events-none z-[3] mt-12 md:mt-8 object-cover md:object-contain h-[350px] md:h-full"
           title="Video tooltip on hover."
           poster="/pre.png"
           muted
