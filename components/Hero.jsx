@@ -79,6 +79,27 @@ const Hero = () => {
             </button>
           </motion.a>
         </div>
+        <div className="relative w-[90%]">
+            <div>
+              <Lines />
+            </div>
+            <div className="absolute flex justify-center items-center top-0 left-0 w-full h-full z-1">
+              <div className="w-[100px] ">
+                <InfinitySign />
+              </div>
+            </div>
+            <div className="absolute flex justify-center items-center top-0 left-0 w-full h-full z-1">
+              <div className=" ">
+                <Image
+                  width={600}
+                  height={300}
+                  className="w-full opacity-30"
+                  alt="fade"
+                  src={"/fade.svg"}
+                />
+              </div>
+            </div>
+          </div>
         <div className="flex flex-col gap-6 pt-10 w-full px-5 md:px-14">
           <motion.hr
             initial={{ width: 0 }}
@@ -105,27 +126,7 @@ const Hero = () => {
             projects. This allows devs to create more, invest more, and leverage
             their abilities to profit more.
           </p>
-          <div className="relative">
-            <div>
-              <Lines />
-            </div>
-            <div className="absolute flex justify-center items-center top-0 left-0 w-full h-full z-1">
-              <div className="w-[100px] ">
-                <InfinitySign />
-              </div>
-            </div>
-            <div className="absolute flex justify-center items-center top-0 left-0 w-full h-full z-1">
-              <div className=" ">
-                <Image
-                  width={600}
-                  height={300}
-                  className="w-full opacity-30"
-                  alt="fade"
-                  src={"/fade.svg"}
-                />
-              </div>
-            </div>
-          </div>
+          
           <p className="text-justify text-lg lg:text-xl">
             Over time, the protocol has not only established its effectiveness
             in meeting market demands, but has also robustly validated the
