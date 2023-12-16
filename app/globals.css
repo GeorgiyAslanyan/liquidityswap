@@ -31,3 +31,8 @@ body {
   font-weight: 500;
   color: rgb(var(--foreground-rgb));
 }
+
+button {
+  align-items: center;
+  -webkit-align-items: center;
+}
