@@ -50,17 +50,6 @@ const Hero = () => {
           <Image src={"/logo.svg"} alt="logo" width={41} height={40} />
           <p className="">ØxLiquidity</p>
         </motion.div>
-        <motion.img
-          initial={{ opacity: 0, scale: 0.5 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.4, duration: 0.4 }}
-          viewport={{ once: true }}
-          width="100%"
-          height="100%"
-          src="/clock_alpha.gif"
-          className="pointer-events-none z-[3] block md:hidden mt-12 object-cover md:object-contain h-[350px] md:h-full"
-          alt="Video tooltip on hover."
-        />
         <motion.video
           initial={{ opacity: 0, scale: 0.5 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -68,7 +57,7 @@ const Hero = () => {
           viewport={{ once: true }}
           width="100%"
           height="100%"
-          className="pointer-events-none hidden md:block mt-8 object-cover md:object-contain h-[350px] md:h-full"
+          className="pointer-events-none mt-8 object-cover md:object-contain h-[350px] md:h-full"
           title="Video tooltip on hover."
           poster="/pre.png"
           muted
@@ -76,6 +65,7 @@ const Hero = () => {
           loop
           autoPlay>
           <source src="/clock_alpha.webm" type="video/webm" />
+          <source src="/clock_alpha.mp4" type="video/mp4" />
         </motion.video>
         <div className="flex text-center z-[7] flex-col gap-7 -mt-8 md:-mt-12">
           <motion.p>
