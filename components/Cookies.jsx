@@ -13,7 +13,7 @@ const Cookies = () => {
             </p>
             <button
               onClick={() => setCookie(false)}
-              className="text-sm w-full sm:w-fit flex items-center rounded-2xl whitespace-nowrap bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all text-white py-2 px-4">
+              className="text-sm w-full sm:w-fit flex items-center justify-center rounded-2xl whitespace-nowrap bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all text-white py-2 px-4">
               <p>ACCEPT</p>
             </button>
           </div>
