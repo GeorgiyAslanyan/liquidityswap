@@ -39,7 +39,7 @@ const Navbar = () => {
           <div className="flex gap-4 sm:gap-5 items-center">
           <motion.a
               className="flex items-center justify-center opacity-100 hover:opacity-70 duration-300 ease-in-out transition-all"
-              href="https://linktr.ee/"
+              href="https://linktr.ee/0xliquidity"
               target="_blank"
               rel="noopener noreferrer">
               <Image
@@ -54,7 +54,7 @@ const Navbar = () => {
               initial={{ opacity: 0, y: -20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.2, duration: 0.4 }}
-              href="http://"
+              href="https://docs.0xliquidityswap.io/"
               target="_blank"
               className="flex items-center"
               rel="noopener noreferrer">

@@ -87,7 +87,7 @@ const Description = () => {
             className="flex gap-4 items-center">
             <p>Secured by:</p>
             <a
-              href="https://kleros.io/"
+              href="https://kleros.world/xLiquidity-Swap-6823cc1b2f194ea688c6e36fa5d0e2f2"
               target="_blank"
               rel="noopener noreferrer">
               <Image
@@ -104,7 +104,7 @@ const Description = () => {
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0, duration: 0.4 }}
             className="">
-            © 2023 ZeroX Labs
+            ©2023 ZeroXLabs
           </motion.p>
         </div>
       </div>

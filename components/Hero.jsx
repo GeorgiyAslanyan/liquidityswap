@@ -48,7 +48,7 @@ const Hero = () => {
           viewport={{ once: true }}
           className="flex gap-5 items-center z-[7] absolute left-6 top-6">
           <Image src={"/logo.svg"} alt="logo" width={41} height={40} />
-          <p className="">ØxLiquidity</p>
+          <p className="mt-[5px]">ØxLiquidity</p>
         </motion.div>
         <motion.video
           initial={{ opacity: 0, scale: 0.5 }}
@@ -169,12 +169,12 @@ const Hero = () => {
               </div>
             </div>
             <motion.a
-              href="https://t.me/LPSwapBot"
+              href="https://app.uniswap.org/swap"
               target="_blank"
               className="hidden lg:flex absolute left-0 bottom-0 justify-center w-[90%] md:w-fit"
               rel="noopener noreferrer">
               <button className="items-center min-w-[188px] text-base lg:text-xl w-[90%] whitespace-nowrap  justify-center flex hover:gap-4 gap-2 sm:w-fit rounded-2xl bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all text-white py-3 px-5 h-full">
-               <p>Learn more</p> {" "}
+               <p>Buy ØxLP</p> {" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -209,30 +209,9 @@ const Hero = () => {
             ))}
           </div> */}
           <div className="flex md:hidden flex-col md:flex-row relative z-[7] items-center justify-center gap-4">
-          <motion.a
-              href="https://t.me/LPSwapBot"
-              target="_blank"
-              className="flex lg:hidden justify-center w-[90%] md:w-fit"
-              rel="noopener noreferrer">
-              <button className="items-center min-w-[188px] text-base lg:text-xl w-[90%] whitespace-nowrap  justify-center flex hover:gap-4 gap-2 sm:w-fit rounded-2xl bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all text-white py-3 px-5 h-full">
-               <p>Learn more</p> {" "}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="w-4 h-4 lg:w-5 lg:h-5">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                  />
-                </svg>
-              </button>
-            </motion.a>
+          
             <motion.a
-              href="https://t.me/LPSwapBot"
+              href="https://app.uniswap.org/swap"
               target="_blank"
               className="flex justify-center w-[90%] md:hidden"
               rel="noopener noreferrer">
@@ -255,33 +234,10 @@ const Hero = () => {
             </motion.a>
           </div>
           <div className="hidden md:flex flex-col md:flex-row relative z-[8] items-center justify-between gap-4 pb-5">
-          
-            <motion.a
-              href="https://t.me/LPSwapBot"
-              target="_blank"
-              className=" md:flex justify-start w-[90%] hidden"
-              rel="noopener noreferrer">
-              <button className="items-center text-base min-w-[188px] lg:text-xl whitespace-nowrap justify-center w-[90%] flex hover:gap-4 gap-2 sm:w-fit rounded-2xl bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all text-white py-3 px-5 h-full">
-                <p>Buy ØxLP</p>{" "}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="w-4 h-4 lg:w-5 lg:h-5">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                  />
-                </svg>
-              </button>
-            </motion.a>
-            <div className="hidden md:flex flex-row relative z-[7] items-center justify-center gap-4">
+            <div className="hidden md:flex flex-row relative z-[7] items-center justify-center gap-3">
             <motion.a
               className="rounded-xl flex items-center justify-center bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all p-3"
-              href="https://t.me/LPSwapBot"
+              href="https://t.me/ZeroXLiquidity"
               target="_blank"
               rel="noopener noreferrer">
               <Image
@@ -294,7 +250,7 @@ const Hero = () => {
             </motion.a>
             <motion.a
               className="rounded-xl flex items-center justify-center bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all p-3"
-              href="https://x.com/0xLiquiditySwap"
+              href="https://twitter.com/0xLiquiditySwap"
               target="_blank"
               rel="noopener noreferrer">
               <Image
@@ -307,7 +263,7 @@ const Hero = () => {
             </motion.a>
             <motion.a
               className="rounded-xl flex items-center justify-center bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all p-3"
-              href="https://medium.com/"
+              href="https://medium.com/@0xLiquidity"
               target="_blank"
               rel="noopener noreferrer">
               <Image
@@ -323,7 +279,7 @@ const Hero = () => {
           <div className="flex md:hidden flex-row relative z-[7] items-center justify-center gap-4">
             <motion.a
               className="rounded-xl flex items-center justify-center bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all p-3"
-              href="https://t.me/LPSwapBot"
+              href="https://t.me/ZeroXLiquidity"
               target="_blank"
               rel="noopener noreferrer">
               <Image
