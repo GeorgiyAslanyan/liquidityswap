@@ -3,7 +3,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Lines from "./Lines";
-import InfinitySign from "./InfinitySign";
 import LinesTop from "./LinesTop";
 //
 
@@ -24,7 +23,7 @@ const Hero = () => {
     <div className="bg-black min-h-screen min-w-screen rounded-2xl pb-[60px] xl:pb-0
     sm:rounded-3xl border border-[#EAC57E] mt-[72px] md:mt-5 lg:mt-10 mx-3 md:mx-5 lg:mx-10 relative overflow-hidden">
       <div className="absolute opacity-50 pointer-events-none bg-[url('/clearbg.png')] bg-234 md:bg-contain bg-repeat z-[6] w-full h-full "></div>
-      <div className="z-[6] absolute pointer-events-none rotate-180 w-full flex items-center justify-center left-0 top-[70px] md:top-[90px]">
+      <div className="z-[6] absolute pointer-events-none rotate-180 w-full flex items-center justify-center left-0 top-[42px] md:top-[90px]">
         <div className="w-[90%] relative">
           <LinesTop />
           <div className="absolute flex justify-center items-center top-0 left-0 w-full h-full z-1">
@@ -46,7 +45,7 @@ const Hero = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.4 }}
           viewport={{ once: true }}
-          className="flex gap-5 items-center z-[7] absolute left-6 top-6">
+          className="hidden md:flex gap-5 items-center z-[7] absolute left-6 top-6">
           <Image src={"/logo.svg"} alt="logo" width={41} height={40} />
           <p className="mt-[5px]">ØxLiquidity</p>
         </motion.div>
@@ -57,7 +56,7 @@ const Hero = () => {
           viewport={{ once: true }}
           width="100%"
           height="100%"
-          className="pointer-events-none z-[3] mt-12 md:mt-8 object-cover md:object-contain h-[350px] md:h-full"
+          className="pointer-events-none z-[3] mt-4 md:mt-8 object-cover md:object-contain h-[400px] md:h-full"
           title="Video tooltip on hover."
           poster="/pre.png"
           muted
@@ -171,7 +170,7 @@ const Hero = () => {
             <motion.a
               href="https://app.uniswap.org/swap"
               target="_blank"
-              className="hidden lg:flex absolute left-0 bottom-0 justify-center w-[90%] md:w-fit"
+              className="hidden md:flex absolute left-0 bottom-0 justify-center w-fit"
               rel="noopener noreferrer">
               <button className="items-center min-w-[188px] text-base lg:text-xl w-[90%] whitespace-nowrap  justify-center flex hover:gap-4 gap-2 sm:w-fit rounded-2xl bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all text-white py-3 px-5 h-full">
                <p>Buy ØxLP</p> {" "}
@@ -213,7 +212,7 @@ const Hero = () => {
             <motion.a
               href="https://app.uniswap.org/swap"
               target="_blank"
-              className="flex justify-center w-[90%] md:hidden"
+              className="flex justify-center md:hidden"
               rel="noopener noreferrer">
               <button className="items-center text-base min-w-[188px] lg:text-xl whitespace-nowrap justify-center w-[90%] flex hover:gap-4 gap-2 sm:w-fit rounded-2xl bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all text-white py-3 px-5 h-full">
                 <p>Buy ØxLP</p>{" "}
@@ -236,39 +235,39 @@ const Hero = () => {
           <div className="hidden md:flex flex-col md:flex-row relative z-[8] items-center justify-between gap-4 pb-5">
             <div className="hidden md:flex flex-row relative z-[7] items-center justify-center gap-3">
             <motion.a
-              className="rounded-xl flex items-center justify-center bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all p-3"
+              className="rounded-xl h-[46px] lg:h-[54px] flex items-center justify-center bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all p-2 lg:p-3"
               href="https://t.me/ZeroXLiquidity"
               target="_blank"
               rel="noopener noreferrer">
               <Image
                 src={"/tg.svg"}
-                className=""
+                className="md:h-[20px] lg:h-[24px]"
                 alt="tg"
                 width={30}
                 height={37}
               />
             </motion.a>
             <motion.a
-              className="rounded-xl flex items-center justify-center bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all p-3"
+              className="rounded-xl h-[46px] lg:h-[54px] flex items-center justify-center bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all p-2 lg:p-3"
               href="https://twitter.com/0xLiquiditySwap"
               target="_blank"
               rel="noopener noreferrer">
               <Image
                 src={"/tw.svg"}
-                className=""
+                className="md:h-[20px] lg:h-[24px]"
                 alt="tg"
                 width={30}
                 height={37}
               />
             </motion.a>
             <motion.a
-              className="rounded-xl flex items-center justify-center bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all p-3"
+              className="rounded-xl h-[46px] lg:h-[54px] flex items-center justify-center bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all p-2 lg:p-3"
               href="https://medium.com/@0xLiquidity"
               target="_blank"
               rel="noopener noreferrer">
               <Image
                 src={"/medium.svg"}
-                className=""
+                className="md:h-[25px] lg:h-[27px]"
                 alt="tg"
                 width={30}
                 height={37}
@@ -276,7 +275,7 @@ const Hero = () => {
             </motion.a>
           </div>
           </div>
-          <div className="flex md:hidden flex-row relative z-[7] items-center justify-center gap-4">
+          <div className="flex md:hidden flex-row relative z-[7] items-center justify-center gap-3">
             <motion.a
               className="rounded-xl flex items-center justify-center bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all p-3"
               href="https://t.me/ZeroXLiquidity"

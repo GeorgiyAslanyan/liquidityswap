@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const Description = () => {
   return (
-    <div className=" flex items-center justify-center min-w-screen pb-[70px]">
+    <div className=" flex items-center justify-center min-w-screen pb-[40px]">
       <div className="mx-3 md:mx-5 lg:mx-10 flex flex-col gap-[51px]">
         <motion.h1 className="w-full pt-[51px] text-center ">
           Why Us?
@@ -33,7 +33,7 @@ const Description = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0, duration: 0.4 }}>
             <p className="text-[#EAC57E] bg-[#1F2123] px-4 py-2 rounded-xl 2xl:rounded-full w-fit">
-              Maximize Your Ethereum&apos;s Potential
+              Maximize Your Potential
             </p>
             <p className="">
               With our platform, your Ethereum isn&apos;t just sitting idle.
