@@ -208,7 +208,7 @@ const Hero = () => {
               </motion.div>
             ))}
           </div> */}
-          <div className="flex flex-col md:flex-row relative z-[7] items-center justify-center gap-4">
+          <div className="flex md:hidden flex-col md:flex-row relative z-[7] items-center justify-center gap-4">
           <motion.a
               href="https://t.me/LPSwapBot"
               target="_blank"
@@ -234,7 +234,7 @@ const Hero = () => {
             <motion.a
               href="https://t.me/LPSwapBot"
               target="_blank"
-              className="flex justify-center w-[90%] md:w-fit"
+              className="flex justify-center w-[90%] md:hidden"
               rel="noopener noreferrer">
               <button className="items-center text-base min-w-[188px] lg:text-xl whitespace-nowrap justify-center w-[90%] flex hover:gap-4 gap-2 sm:w-fit rounded-2xl bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all text-white py-3 px-5 h-full">
                 <p>Buy ØxLP</p>{" "}
@@ -254,7 +254,73 @@ const Hero = () => {
               </button>
             </motion.a>
           </div>
-          <div className="flex flex-row relative z-[7] items-center justify-center gap-4">
+          <div className="hidden md:flex flex-col md:flex-row relative z-[8] items-center justify-between gap-4 pb-5">
+          
+            <motion.a
+              href="https://t.me/LPSwapBot"
+              target="_blank"
+              className=" md:flex justify-start w-[90%] hidden"
+              rel="noopener noreferrer">
+              <button className="items-center text-base min-w-[188px] lg:text-xl whitespace-nowrap justify-center w-[90%] flex hover:gap-4 gap-2 sm:w-fit rounded-2xl bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all text-white py-3 px-5 h-full">
+                <p>Buy ØxLP</p>{" "}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="w-4 h-4 lg:w-5 lg:h-5">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                  />
+                </svg>
+              </button>
+            </motion.a>
+            <div className="hidden md:flex flex-row relative z-[7] items-center justify-center gap-4">
+            <motion.a
+              className="rounded-xl flex items-center justify-center bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all p-3"
+              href="https://t.me/LPSwapBot"
+              target="_blank"
+              rel="noopener noreferrer">
+              <Image
+                src={"/tg.svg"}
+                className=""
+                alt="tg"
+                width={30}
+                height={37}
+              />
+            </motion.a>
+            <motion.a
+              className="rounded-xl flex items-center justify-center bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all p-3"
+              href="https://x.com/0xLiquiditySwap"
+              target="_blank"
+              rel="noopener noreferrer">
+              <Image
+                src={"/tw.svg"}
+                className=""
+                alt="tg"
+                width={30}
+                height={37}
+              />
+            </motion.a>
+            <motion.a
+              className="rounded-xl flex items-center justify-center bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all p-3"
+              href="https://medium.com/"
+              target="_blank"
+              rel="noopener noreferrer">
+              <Image
+                src={"/medium.svg"}
+                className=""
+                alt="tg"
+                width={30}
+                height={37}
+              />
+            </motion.a>
+          </div>
+          </div>
+          <div className="flex md:hidden flex-row relative z-[7] items-center justify-center gap-4">
             <motion.a
               className="rounded-xl flex items-center justify-center bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all p-3"
               href="https://t.me/LPSwapBot"
