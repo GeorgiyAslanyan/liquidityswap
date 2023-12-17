@@ -144,7 +144,54 @@ const Hero = () => {
             us, as we gear up to enter the main phase of our implementation
             strategy.
           </p>
-          <div className="grid grid-cols-1 relative z-[7] sm:grid-cols-3 gap-4">
+          <div className='relative'>
+          <object className="w-full h-full z-[7] relative pointer-events-none" type="image/svg+xml" data="/scheme.svg"></object>
+          <div className="absolute flex justify-center pointer-events-none items-center top-0 left-0 w-full  z-1">
+              <div className=" ">
+                <Image
+                  width={600}
+                  height={300}
+                  className="w-full opacity-30"
+                  alt="fade"
+                  src={"/fade.svg"}
+                />
+              </div>
+            </div>
+            <div className="absolute flex justify-center pointer-events-none items-center bottom-0 left-0 w-full  z-1">
+              <div className=" ">
+                <Image
+                  width={600}
+                  height={300}
+                  className="w-full opacity-30"
+                  alt="fade"
+                  src={"/fade.svg"}
+                />
+              </div>
+            </div>
+            <motion.a
+              href="https://t.me/LPSwapBot"
+              target="_blank"
+              className="hidden lg:flex absolute left-0 bottom-0 justify-center w-[90%] md:w-fit"
+              rel="noopener noreferrer">
+              <button className="items-center min-w-[188px] text-base lg:text-xl w-[90%] whitespace-nowrap  justify-center flex hover:gap-4 gap-2 sm:w-fit rounded-2xl bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all text-white py-3 px-5 h-full">
+               <p>Learn more</p> {" "}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="w-4 h-4 lg:w-5 lg:h-5">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                  />
+                </svg>
+              </button>
+            </motion.a>
+          </div>
+          {/* <div className="grid grid-cols-1 relative z-[7] sm:grid-cols-3 gap-4">
             {arr.map((el, index) => (
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
@@ -152,7 +199,6 @@ const Hero = () => {
                 transition={{ delay: (index + 1) * 0.5, duration: 0.7 }}
                 className="flex gap-3 p-3 items-start rounded-xl bg-[#1F2123]"
                 key={index}>
-                {/* <Image src={"/logo.svg"} alt="logo" width={40} height={40} /> */}
                 <div className="flex flex-col gap-1">
                   <p className="uppercase text-base text-[#EAC57E]">
                     {el.title}
@@ -161,12 +207,12 @@ const Hero = () => {
                 </div>
               </motion.div>
             ))}
-          </div>
+          </div> */}
           <div className="flex flex-col md:flex-row relative z-[7] items-center justify-center gap-4">
-            <motion.a
+          <motion.a
               href="https://t.me/LPSwapBot"
               target="_blank"
-              className="flex justify-center w-[90%] md:w-fit"
+              className="flex lg:hidden justify-center w-[90%] md:w-fit"
               rel="noopener noreferrer">
               <button className="items-center min-w-[188px] text-base lg:text-xl w-[90%] whitespace-nowrap  justify-center flex hover:gap-4 gap-2 sm:w-fit rounded-2xl bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all text-white py-3 px-5 h-full">
                <p>Learn more</p> {" "}
