@@ -37,7 +37,19 @@ const Navbar = () => {
             <span className="whitespace-nowrap">Price ETH:</span> <br className='block sm:hidden'/> <span className="text-[#EAC57E]">$2,179</span>
           </motion.p>
           <div className="flex gap-4 sm:gap-5 items-center">
-            
+          <motion.a
+              className="flex items-center justify-center opacity-100 hover:opacity-70 duration-300 ease-in-out transition-all"
+              href="https://linktr.ee/"
+              target="_blank"
+              rel="noopener noreferrer">
+              <Image
+                src={"/linktree.png"}
+                className=""
+                alt="tg"
+                width={20}
+                height={20}
+              />
+            </motion.a>
             <motion.a
               initial={{ opacity: 0, y: -20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -46,8 +58,8 @@ const Navbar = () => {
               target="_blank"
               className="flex items-center"
               rel="noopener noreferrer">
-              <button className="rounded-xl flex gap-2 hover:gap-4 items-center font-semibold bg-[#1F2123] hover:bg-[#36393c] text-sm duration-150 ease-linear transition-all text-white py-2 px-2 md:px-6 h-full">
-                <p>Documentation</p> <svg
+              <button className="rounded-xl flex gap-2 hover:gap-4 items-center font-semibold bg-[#1F2123] hover:bg-[#36393c] text-sm duration-150 ease-linear transition-all text-white py-2 sm:px-2 px-5 md:px-6 h-full">
+              <p className="block sm:hidden">Docs</p><p className="hidden sm:block">Documentation</p> <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"

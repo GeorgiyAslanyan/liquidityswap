@@ -235,6 +235,19 @@ const Hero = () => {
                 height={37}
               />
             </motion.a>
+            <motion.a
+              className="rounded-xl flex items-center justify-center bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all p-3"
+              href="https://medium.com/"
+              target="_blank"
+              rel="noopener noreferrer">
+              <Image
+                src={"/medium.svg"}
+                className=""
+                alt="tg"
+                width={30}
+                height={37}
+              />
+            </motion.a>
           </div>
 
           <div className="w-full relative z-[7] pointer-events-none -mt-5 md:-mt-20">

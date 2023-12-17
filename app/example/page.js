@@ -1,3 +1,4 @@
+import Animated from "@/components/Animated.jsx";
 import Image from "next/image";
 
 export default function Home() {
