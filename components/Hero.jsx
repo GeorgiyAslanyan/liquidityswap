@@ -170,7 +170,7 @@ const Hero = () => {
             <motion.a
               href="https://app.uniswap.org/swap"
               target="_blank"
-              className="hidden md:flex absolute left-0 bottom-0 justify-center w-fit"
+              className="hidden md:flex absolute right-0 bottom-0 justify-center w-fit"
               rel="noopener noreferrer">
               <button className="items-center min-w-[188px] text-base lg:text-xl w-[90%] whitespace-nowrap  justify-center flex hover:gap-4 gap-2 sm:w-fit rounded-2xl bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all text-white py-3 px-5 h-full">
                <p>Buy ØxLP</p> {" "}
@@ -232,7 +232,7 @@ const Hero = () => {
               </button>
             </motion.a>
           </div>
-          <div className="hidden md:flex flex-col md:flex-row relative z-[8] items-center justify-between gap-4 pb-5">
+          <div className="hidden md:flex flex-col md:flex-row relative z-[8] items-center justify-end gap-4 pb-5">
             <div className="hidden md:flex flex-row relative z-[7] items-center justify-center gap-3">
             <motion.a
               className="rounded-xl h-[46px] lg:h-[54px] flex items-center justify-center bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all p-2 lg:p-3"
