@@ -25,6 +25,12 @@ const Navbar = () => {
   };
   useEffect(() => {
     fetchData();
+
+    const intervalId = setInterval(() => {
+      fetchData();
+    }, 60000);
+    
+    return () => clearInterval(intervalId);
   }, []);
 
   const handleScroll = () => {
