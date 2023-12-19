@@ -2,13 +2,30 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import axios from "axios";
 
 const Navbar = () => {
   const [scrollY, setScrollY] = useState(0);
-  const [isOpen, setIsOpen] = useState(false);
-  const [burger, setBurger] = useState(false);
-  const [isDe, setIsDe] = useState(true);
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [ethPriceUSD, setEthPriceUSD] = useState();
+  const [error, setError] = useState(null);
+
+  const fetchData = async () => {
+    try {
+      const response = await axios.get("https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd");
+      const data = await response.data     
+
+      if (data && data.ethereum && data.ethereum.usd) {
+        setEthPriceUSD(data.ethereum.usd);
+      } else {
+        setError('Не удалось получить цену Ethereum (ETH)');
+      }
+    } catch (error) {
+      setError('Ошибка при выполнении запроса к API');
+    }
+  };
+  useEffect(() => {
+    fetchData();
+  }, []);
 
   const handleScroll = () => {
     setScrollY(window.scrollY);
@@ -34,7 +51,7 @@ const Navbar = () => {
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.4 }}>
-            <span className="whitespace-nowrap ">Price ETH:</span> <br className='block sm:hidden'/> <span className="text-[#EAC57E]">$2,179</span>
+            <span className="whitespace-nowrap ">Price ETH:</span> <br className='block sm:hidden'/> <span className="text-[#EAC57E]">${ethPriceUSD}</span>
           </motion.p>
           <div className="flex gap-4 sm:gap-5 items-center">
           <motion.a
