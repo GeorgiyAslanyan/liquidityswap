@@ -90,7 +90,7 @@ const Navbar = () => {
               initial={{ opacity: 0, y: -20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.2, duration: 0.4 }}
-              href="https://docs.0xliquidityswap.io/"
+              href="https://app.0xliquidityswap.io/"
               target="_blank"
               className="flex items-center"
               rel="noopener noreferrer">
