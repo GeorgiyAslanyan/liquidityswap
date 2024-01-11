@@ -74,6 +74,19 @@ const Navbar = () => {
               />
             </motion.a>
             <motion.a
+              className="flex items-center justify-center opacity-100 hover:opacity-70 duration-300 ease-in-out transition-all"
+              href="https://docs.0xliquidityswap.io/"
+              target="_blank"
+              rel="noopener noreferrer">
+              <Image
+                src={"/gitbook.svg"}
+                className=""
+                alt="gitbook"
+                width={24}
+                height={24}
+              />
+            </motion.a>
+            <motion.a
               initial={{ opacity: 0, y: -20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.2, duration: 0.4 }}
@@ -82,7 +95,7 @@ const Navbar = () => {
               className="flex items-center"
               rel="noopener noreferrer">
               <button className="rounded-xl flex gap-2 hover:gap-4 items-center font-semibold bg-[#1F2123] hover:bg-[#36393c] text-sm duration-150 ease-linear transition-all text-white py-2 sm:px-2 px-5 md:px-6 h-full">
-              <p className="block sm:hidden">Docs</p><p className="hidden sm:block">Documentation</p> <svg
+              <p className="block sm:hidden">App</p><p className="hidden sm:block">Launch App</p> <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
