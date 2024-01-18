@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Lines from "./Lines";
 import LinesTop from "./LinesTop";
-//
 
 const arr = [
   {
@@ -17,7 +16,7 @@ const arr = [
   },
   { title: "In progress", descr: "Advanced Liquidity Locker Solutions" },
 ];
-//[url('/background.svg')]
+
 const Hero = () => {
   return (
     <div className="bg-black min-h-screen min-w-screen rounded-2xl pb-[60px] xl:pb-0
@@ -125,11 +124,10 @@ const Hero = () => {
             <span className="text-[#EAC57E]">Solutions</span> in Decentralized
             Finance
           </motion.p>
-
           <p className="text-start lg:text-justify text-lg lg:text-xl">
-            Launched in October 2023, 0xLiquidity emerged as a new protocol in
+            Launched in October 2023, ØxLiquidity emerged as a new protocol in
             the DeFi space, revolutionizing how liquidity is managed and
-            utilized. At its core, 0xLiquidity provides a unique service that
+            utilized. At its core, ØxLiquidity provides a unique service that
             enables holders to sell their liquidity, significantly reducing the
             waiting period typically associated with locked funds in DeFi
             projects. This allows devs to create more, invest more, and leverage
