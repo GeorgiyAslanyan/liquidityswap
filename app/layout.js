@@ -7,7 +7,7 @@ import GoogleA from "@/components/GoogleA";
 export const metadata = {
   title: "ØxLiquidity | Swap",
   description:
-    "Do not wait</span> until the end of the liquidity lock-in period",
+    "Pioneering Liquidity Solutions in Decentralized Finance",
 };
 
 export default function RootLayout({ children }) {

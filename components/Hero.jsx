@@ -127,7 +127,7 @@ const Hero = () => {
           </motion.p>
 
           <p className="text-start lg:text-justify text-lg lg:text-xl">
-            Launched in September 2023, 0xLiquidity emerged as a new protocol in
+            Launched in October 2023, 0xLiquidity emerged as a new protocol in
             the DeFi space, revolutionizing how liquidity is managed and
             utilized. At its core, 0xLiquidity provides a unique service that
             enables holders to sell their liquidity, significantly reducing the
