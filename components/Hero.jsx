@@ -260,7 +260,7 @@ const Hero = () => {
             </motion.a>
             <motion.a
               className="rounded-xl h-[46px] lg:h-[54px] flex items-center justify-center bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all p-2 lg:p-3"
-              href="https://medium.com/@0xLiquidity"
+              href="https://medium.com/@0xLiquidity/%C3%B8xliquidity-a-heartfelt-message-to-the-defi-community-ac7b80dc082d"
               target="_blank"
               rel="noopener noreferrer">
               <Image
@@ -302,7 +302,7 @@ const Hero = () => {
             </motion.a>
             <motion.a
               className="rounded-xl flex items-center justify-center bg-[#1F2123] hover:bg-[#36393c] duration-300 ease-in-out transition-all p-3"
-              href="https://medium.com/"
+              href="https://medium.com/@0xLiquidity/%C3%B8xliquidity-a-heartfelt-message-to-the-defi-community-ac7b80dc082d"
               target="_blank"
               rel="noopener noreferrer">
               <Image
