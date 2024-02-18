@@ -166,7 +166,7 @@ const Hero = () => {
               </div>
             </div>
             <motion.a
-              href="https://app.uniswap.org/swap"
+              href="https://app.uniswap.org/swap?outputCurrency=0xd377f28245bc505190c8f34d2bfe5f215754f634&use=V2"
               target="_blank"
               className="hidden md:flex absolute right-0 bottom-0 justify-center w-fit"
               rel="noopener noreferrer">
@@ -208,7 +208,7 @@ const Hero = () => {
           <div className="flex md:hidden flex-col md:flex-row relative z-[7] items-center justify-center gap-4">
           
             <motion.a
-              href="https://app.uniswap.org/swap"
+              href="https://app.uniswap.org/swap?outputCurrency=0xd377f28245bc505190c8f34d2bfe5f215754f634&use=V2"
               target="_blank"
               className="flex justify-center md:hidden"
               rel="noopener noreferrer">
