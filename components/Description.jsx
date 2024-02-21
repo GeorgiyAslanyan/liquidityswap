@@ -99,7 +99,7 @@ const Description = () => {
               />
             </a>
           </motion.div>
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col items-end gap-2">
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
