@@ -99,13 +99,18 @@ const Description = () => {
               />
             </a>
           </motion.div>
+          <div className="flex flex-col gap-2">
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0, duration: 0.4 }}
             className="">
-            ©2023 ZeroXLabs
+            © 2023 ZeroXLabs
           </motion.p>
+          <motion.a initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0, duration: 0.4 }} className="" href="mailto:info@0xliquidityswap.io">info@0xliquidityswap.io</motion.a>
+          </div>
         </div>
       </div>
     </div>
